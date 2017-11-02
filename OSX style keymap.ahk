@@ -23,6 +23,16 @@
 !Up::Send {Lctrl down}{Home}{Lctrl up}
 !Down::Send {Lctrl down}{End}{Lctrl up}
 
+; Selection (uses a combination of the above with shift)
+<!+Left::Send {ctrl down}{shift down}{Left}{shift up}{ctrl up}
+<!+Right::Send {ctrl down}{shift down}{Right}{shift up}{ctrl up}
+^+Left::Send {shift down}{Home}}{shift up}
+^+Right::Send {shift down}{End}}{shift up}
+!+Up::Send {ctrl down}{shift down}{Up}}{shift up}{ctrl up}
+!+Down::Send {ctrl down}{shift down}{Down}}{shift up}{ctrl up}
+^+Up::Send {Lctrl down}{shift down}{Home}}{shift up}{Lctrl up}
+^+Down::Send {Lctrl down}{shift down}{End}}{shift up}{Lctrl up}
+
 ;Closing windows and programs (using the Win Key)
 !w::Send ^{F4}
 !q::Send !{F4}
@@ -39,3 +49,11 @@
 !y::Send ^{y}
 !h::Send ^{h}
 !o::Send ^{o}
+!n::Send ^{n}
+
+; back and forward
+![::Send !{Left}
+!]::Send !{Right}
+
+; TODO !+t::Send {ctrl}{shift}t
+!LBUTTON::Send {Ctrl Down}{Click}{Ctrl up}
