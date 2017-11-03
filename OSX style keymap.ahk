@@ -1,4 +1,7 @@
-﻿^!,::Reload
+﻿; Reload
+^!,::Reload
+; Run Command Line
+^!/::Run cmd
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; OSX style keys;
@@ -24,27 +27,29 @@
 !Down::Send {Lctrl down}{End}{Lctrl up}
 
 ; Selection (uses a combination of the above with shift)
-<!+Left::Send {ctrl down}{shift down}{Left}{shift up}{ctrl up}
-<!+Right::Send {ctrl down}{shift down}{Right}{shift up}{ctrl up}
-^+Left::Send {shift down}{Home}}{shift up}
-^+Right::Send {shift down}{End}}{shift up}
+^+Left::Send {ctrl down}{shift down}{Left}{shift up}{ctrl up}
+^+Right::Send {ctrl down}{shift down}{Right}{shift up}{ctrl up}
+<!+Left::Send {shift down}{Home}}{shift up}
+<!+Right::Send {shift down}{End}}{shift up}
 !+Up::Send {ctrl down}{shift down}{Up}}{shift up}{ctrl up}
 !+Down::Send {ctrl down}{shift down}{Down}}{shift up}{ctrl up}
 ^+Up::Send {Lctrl down}{shift down}{Home}}{shift up}{Lctrl up}
 ^+Down::Send {Lctrl down}{shift down}{End}}{shift up}{Lctrl up}
 
 ;Closing windows and programs (using the Win Key)
-!w::Send ^{F4}
+!w::Send ^{w}
 !q::Send !{F4}
 
 ;The following section replaces Ctrl+Key with  Win+Key
 !a::Send ^{a}
 !s::Send ^{s}
 !d::Send ^{d}
+!f::Send ^{f}
 !z::Send ^{z} 
 !x::Send ^{x}
 !c::Send ^{c}
 !v::Send ^{v}
+!r::Send ^{r}
 !t::Send ^{t}
 !y::Send ^{y}
 !h::Send ^{h}
@@ -55,5 +60,9 @@
 ![::Send !{Left}
 !]::Send !{Right}
 
-; TODO !+t::Send {ctrl}{shift}t
+; Command + Left Mouse Click
 !LBUTTON::Send {Ctrl Down}{Click}{Ctrl up}
+
+
+
+!+t::Send ^+{t}
