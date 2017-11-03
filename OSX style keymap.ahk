@@ -1,5 +1,10 @@
 ﻿; Reload
-^!,::Reload
+!F11::Reload
+; Stop Script
+!F12::
+	Suspend
+	return
+
 ; Run Command Line
 ^!/::Run cmd
 
