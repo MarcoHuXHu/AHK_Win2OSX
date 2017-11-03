@@ -40,21 +40,20 @@
 !w::Send ^{w}
 !q::Send !{F4}
 
-;The following section replaces Ctrl+Key with  Win+Key
-!a::Send ^{a}
-!s::Send ^{s}
-!d::Send ^{d}
-!f::Send ^{f}
-!z::Send ^{z} 
-!x::Send ^{x}
-!c::Send ^{c}
-!v::Send ^{v}
-!r::Send ^{r}
-!t::Send ^{t}
-!y::Send ^{y}
-!h::Send ^{h}
-!o::Send ^{o}
-!n::Send ^{n}
+;The following section replaces Alt(my Command Key)+Key with Ctrl+Key
+!a::Send ^{a}	; Select All
+!s::Send ^{s}	; Save
+!d::Send ^{d}	; Bookmark
+!f::Send ^{f}	; Find
+!z::Send ^{z} 	; Undo
+!x::Send ^{x}	; Cut
+!c::Send ^{c}	; Copy
+!v::Send ^{v}	; Paste
+!r::Send ^{r}	; Refresh
+!t::Send ^{t}	; New Tab
+!h::Send ^{h}	; History(Windows)
+!o::Send ^{o}	; Open
+!n::Send ^{n}	; New
 
 ; back and forward
 ![::Send !{Left}
@@ -63,6 +62,10 @@
 ; Command + Left Mouse Click
 !LBUTTON::Send {Ctrl Down}{Click}{Ctrl up}
 
-
-
+; Simulate Command + Shift + t for reopen tabs in chrome
 !+t::Send ^+{t}
+
+; Redo
+!y::Send ^{y}	; Redo(Windows)
+!+z::Send ^{y}	； Redo(OSX)
+
