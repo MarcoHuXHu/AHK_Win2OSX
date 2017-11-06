@@ -72,5 +72,5 @@
 
 ; Redo
 !y::Send ^{y}	; Redo(Windows)
-!+z::Send ^{y}	； Redo(OSX)
+!+z::Send ^{y}	; Redo(OSX)
 
