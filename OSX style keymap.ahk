@@ -79,4 +79,7 @@
 !=::Send ^{=}
 !WheelUp::Send ^{WheelUp}
 !WheelDown::Send ^{WheelDown}
+!0::Send ^0
 
+; Alt + `
+!`::Send !{Tab}
