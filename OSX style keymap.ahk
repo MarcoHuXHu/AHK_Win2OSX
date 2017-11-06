@@ -74,3 +74,9 @@
 !y::Send ^{y}	; Redo(Windows)
 !+z::Send ^{y}	; Redo(OSX)
 
+; Zoom in & out
+!-::Send ^-
+!=::Send ^{=}
+!WheelUp::Send ^{WheelUp}
+!WheelDown::Send ^{WheelDown}
+
