@@ -79,8 +79,10 @@
 !WheelDown::Send ^{WheelDown}
 !0::Send ^0
 
-; Alt + `
+; Alt + ` to simulate Command + `
 !`::Send !{Tab}
+; Alt + Insert to simulate Ctrl + Insert
+!Insert::Send ^{Insert}
 
 ; Alt + Number
 !1::Send ^{1}
