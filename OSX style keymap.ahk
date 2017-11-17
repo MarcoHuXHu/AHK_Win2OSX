@@ -54,7 +54,7 @@
 !x::Send ^{x}	; Cut
 !c::Send ^{c}	; Copy
 !v::Send ^{v}	; Paste
-!b::Send ^{b}	; For Tmux Usage
+; !b::Send ^{b}	; For Tmux Usage ; Disable this one as OSX also use Ctrl + B
 !r::Send ^{r}	; Refresh
 !t::Send ^{t}	; New Tab
 !h::Send ^{h}	; History(Windows)
