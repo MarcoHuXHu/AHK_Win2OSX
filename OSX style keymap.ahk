@@ -68,9 +68,6 @@
 ; Command + Left Mouse Click
 !LBUTTON::Send {Ctrl Down}{Click}{Ctrl up}
 
-; Simulate Command + Shift + t for reopen tabs in chrome
-!+t::Send ^+{t}
-
 ; Redo
 !y::Send ^{y}	; Redo(Windows)
 !+z::Send ^{y}	; Redo(OSX)
@@ -95,3 +92,9 @@
 !7::Send ^{7}
 !8::Send ^{8}
 !9::Send ^{9}
+
+; Ctrl + Shift + Key -> Alt + Shift + Key
+!+t::Send ^+{t} ; Simulate Command + Shift + t for reopen tabs in chrome
+!+p::Send ^+{p} ; Simulate Command + Shift + p for commands in Visual Studio Codes
+!+v::Send ^+{v} ; Simulate Command + Shift + v for show Views
+!+r::Send ^+{r} ; Simulate Ctrl + Shift + R in Eclipse
