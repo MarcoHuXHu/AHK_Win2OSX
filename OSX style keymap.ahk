@@ -97,6 +97,7 @@
 
 ; Ctrl + Shift + Key -> Alt + Shift + Key
 !+t::Send ^+{t} ; Simulate Command + Shift + t for reopen tabs in chrome
+!+n::Send ^+{n} ; Simulate Ctrl + Shift + N in in chrome
 !+p::Send ^+{p} ; Simulate Command + Shift + p for commands in Visual Studio Codes
 !+v::Send ^+{v} ; Simulate Command + Shift + v for show Views
 !+r::Send ^+{r} ; Simulate Ctrl + Shift + R in Eclipse
