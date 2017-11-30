@@ -69,7 +69,6 @@
 !LBUTTON::Send {Ctrl Down}{Click}{Ctrl up}
 
 ; Redo
-!y::Send ^{y}	; Redo(Windows)
 !+z::Send ^{y}	; Redo(OSX)
 
 ; Zoom in & out
