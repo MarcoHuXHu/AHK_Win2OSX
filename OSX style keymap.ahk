@@ -11,7 +11,8 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; OSX style keys;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
+; Win7/10 Startup with this script:
+; Add it the shortcut to Startup folder: %appdata%\Microsoft\Windows\Start Menu\Programs\Startup
 
 ;Command-backspace deletes whole line
 !BS::Send {End}{LShift down}{Home}{LShift Up}{Del}
