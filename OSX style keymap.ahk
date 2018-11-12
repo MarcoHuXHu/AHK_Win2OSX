@@ -101,3 +101,4 @@
 !+p::Send ^+{p} ; Simulate Command + Shift + p for commands in Visual Studio Codes
 !+v::Send ^+{v} ; Simulate Command + Shift + v for show Views
 !+r::Send ^+{r} ; Simulate Ctrl + Shift + R in Eclipse
+!+w::Send ^+{w} ; Simulate Command + Shift + w for close all tabs of one window in chrome
